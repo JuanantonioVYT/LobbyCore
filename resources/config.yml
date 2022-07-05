@@ -1,0 +1,79 @@
+#SimpleCore made by JuanantonioVYT for MegaHost communitty
+
+Join-Message: "[+]{player}"
+NewJoin-Message: "[New +]§aBienvenido §6 {player} §aal servidor"
+
+Quit-Message: "[-]{player}"
+
+#Menu Games Command Config
+
+CommandForm1: "sw join"
+CommandForm2: "ffa join"
+CommandForm3: "tntrun join"
+CommandForm4: "tntag join"
+CommandForm5: "spvp join"
+CommandForm6: "sg join"
+
+#Menu Games Config#
+
+GameTitle: "MiniGames"
+GameInfo: "Elije que modalidad deseas jugar"
+
+GameForm1: "SkyWars"
+GameForm2: "FFA"
+GameForm3: "TNTRun"
+GameForm4: "TNTTag"
+GameForm5: "SkyPvP"
+GameForm6: "Survival Games"
+
+#Menu Cosmetics Config
+
+CosmeticTitle: "Cosmetics"
+CosmeticInfo: "Cosmeticos solo para VIP"
+
+CosmeticForm: "Fly"
+CosmeticForm: "Size"
+CosmeticForm: "ColoChat"
+
+#Messages Fly Config
+
+FlyMessageTrue: "Fly activado"
+FlyTitleTrue: "FLY ON"
+
+FlyMessageFalse: "Fly desactivado"
+FlyTitleFalse: "FLY OFF"
+
+#Menu Fly Config
+
+FlyTitle: "¿Fly ON & Fly OFF?"
+FlyInfo: "Fly for VIP"
+
+FlyForm1: "FLY ON"
+FlyForm2: "FLY OFF"
+
+#Message Size Config
+
+SizeMessageNormal: "Size normal"
+SizeTitleNormal: "Su tamaño es normal"
+
+SizeMessageMedium: "Size medium"
+SizeTitleMedium: "Su tamaño es mediano"
+
+SizeMessageBig: "Size big"
+SizeTitleBig: "Su tamaño es grande"
+
+#Menu Size Config
+
+SizeTitle: "SizeMode"
+SizeInfo: "Aumenta el tamaño de tu skin"
+
+SizeForm1: "Size Normal"
+SizeForm2: "Size Mediano"
+SizeForm3: "Size Grande"
+
+#Menu Info Config
+
+InfoTitle: "Informacion"
+Info: "Information"
+
+#Soon More Updates
