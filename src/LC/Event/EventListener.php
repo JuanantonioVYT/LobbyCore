@@ -13,10 +13,14 @@ use pocketmine\item\ItemFactory;
 use pocketmine\item\Item;
 use pocketmine\item\ItemIds;
 use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\CommandExecutor;
+use pocketmine\command\ConsoleCommandSender;
 
-use Forms\FormAPI\Form;
-use Forms\FormAPI\FormAPI;
-use Forms\FormAPI\SimpleForm;
+use Vecnavium\FormsUI\Form;
+use Vecnavium\FormsUI\FormAPI;
+use Vecnavium\FormsUI\SimpleForm;
 use LC\LobbyCore;
 
 class EventListener implements Listener{
@@ -34,9 +38,9 @@ class EventListener implements Listener{
             Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Join-Message")));
             $player->teleport($player->getServer()->getWorldManager()->getDefaultWorld()->getSafeSpawn());
 
-            $slot1 = ItemFactory::getInstance()->get(401, 0, 1)->setCustomName("Games");
-            $slot2 = ItemFactory::getInstance()->get(401, 0, 1)->setCustomName("Cosmeticos");
-		    $slot3 = ItemFactory::getInstance()->get(403, 0, 1)->setCustomName("Informacion");
+            $slot1 = ItemFactory::getInstance()->get(345, 0, 1)->setCustomName("Games");
+            $slot2 = ItemFactory::getInstance()->get(54, 0, 1)->setCustomName("Cosmeticos");
+		    $slot3 = ItemFactory::getInstance()->get(340, 0, 1)->setCustomName("Informacion");
 
             $player->getInventory()->clearAll();
             $player->getInventory()->setItem(0, $slot1);
@@ -82,22 +86,22 @@ class EventListener implements Listener{
             }
             switch($data){
                 case 0:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm1"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm1"));
                 break;
                 case 1:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm2"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm2"));
                 break;
                 case 2:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm3"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm3"));
                 break;
                 case 3:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm4"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm4"));
                 break;
                 case 4:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm5"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm5"));
                 break;
                 case 5:
-                    $this->getServer()->dispatchCommand($sender, $this->plugin->getConfig()->get("CommandForm6"));
+                    $this->plugin->getServer()->getCommandMap()->dispatch($player, $this->plugin->getConfig()->get("CommandForm6"));
                 break;
             }
         });
@@ -139,9 +143,9 @@ class EventListener implements Listener{
         });
         $form->setTitle(MG::YELLOW . $this->plugin->getConfig()->get("CosmeticTitle"));
         $form->setContent(MG::RED . $this->plugin->getConfig()->get("CosmeticInfo"));
-        $form->addButton(MG::RED . $this->plugin->getConfig()->get("GameForm1"));
-        $form->addButton(MG::RED . $this->plugin->getConfig()->get("GameForm2"));
-        $form->addButton(MG::RED . $this->plugin->getConfig()->get("GameForm3"));
+        $form->addButton(MG::RED . $this->plugin->getConfig()->get("CosmeticForm1"));
+        $form->addButton(MG::RED . $this->plugin->getConfig()->get("CosmeticForm2"));
+        $form->addButton(MG::RED . $this->plugin->getConfig()->get("CosmeticForm3"));
         $form->addButton(MG::RED . "Cerrar");
         $form->sendToPlayer($player);
     }
