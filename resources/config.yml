@@ -31,9 +31,9 @@ GameForm6: "Survival Games"
 CosmeticTitle: "Cosmetics"
 CosmeticInfo: "Cosmeticos solo para VIP"
 
-CosmeticForm: "Fly"
-CosmeticForm: "Size"
-CosmeticForm: "ColoChat"
+CosmeticForm1: "Fly"
+CosmeticForm2: "Size"
+CosmeticForm3: "ColoChat"
 
 #Messages Fly Config
 
