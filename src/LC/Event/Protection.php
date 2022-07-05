@@ -13,7 +13,7 @@ class Protection implements \pocketmine\event\Listener {
 	public function onDamage(\pocketmine\event\entity\EntityDamageEvent $ev) {
 		$pl = $ev->getEntity();
 		if ($pl->getWorld() === Server::getInstance ()->getWorldManager()->getDefaultWorld()) {
-			$ev->cancel(true);
+			    $ev->cancel(false);
 		}
 	}
 	
