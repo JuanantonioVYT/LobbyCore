@@ -12,4 +12,8 @@ permissions:
     default: op   
   lobbycore.use.cosmetics:
     default: op
+  lobbycore.break:
+    default: op
+  lobbycore.place:
+    default: op
 ---
