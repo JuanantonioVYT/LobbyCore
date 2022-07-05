@@ -22,9 +22,9 @@ class ItemCommand extends Command {
        $player->getInventory()->clearALL();
        $player->getArmorInventory()->clearALL();
 
-       $slot1 = ItemFactory::getInstance()->get(401, 0, 1)->setCustomName("Games");
-       $slot2 = ItemFactory::getInstance()->get(401, 0, 1)->setCustomName("Cosmeticos");
-		$slot3 = ItemFactory::getInstance()->get(403, 0, 1)->setCustomName("Informacion");
+       $slot1 = ItemFactory::getInstance()->get(345, 0, 1)->setCustomName("Games");
+       $slot2 = ItemFactory::getInstance()->get(54, 0, 1)->setCustomName("Cosmeticos");
+		   $slot3 = ItemFactory::getInstance()->get(340, 0, 1)->setCustomName("Informacion");
 
        $player->getInventory()->clearAll();
        $player->getInventory()->setItem(0, $slot1);
