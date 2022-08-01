@@ -14,6 +14,6 @@ LobbyCore Configurable API 4.0.0 For MegaHosting Community
 
 # Permissions
 
-- lobbycore.use.cosmetics (new)
+- lobbycore.use.cosmetics
 - lobbycore.use.fly
 - lobbycore.use.size
