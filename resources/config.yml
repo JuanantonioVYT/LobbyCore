@@ -5,6 +5,11 @@ NewJoin-Message: "[New +]§aBienvenido §6 {player} §aal servidor"
 
 Quit-Message: "[-]{player}"
 
+# Hub Nessages Config
+
+Hub-Message: "Volvistes al lobby {player}"
+Hub-Title: "Joined Lobby"
+
 #Menu Games Command Config
 
 CommandForm1: "sw join"
