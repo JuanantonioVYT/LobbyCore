@@ -1,7 +1,6 @@
 #SimpleCore made by JuanantonioVYT for MegaHost communitty
 
 Join-Message: "[+]{player}"
-NewJoin-Message: "[New +]§aBienvenido §6 {player} §aal servidor"
 
 Quit-Message: "[-]{player}"
 
