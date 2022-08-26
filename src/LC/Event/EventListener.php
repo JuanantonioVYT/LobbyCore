@@ -46,8 +46,6 @@ class EventListener implements Listener{
             $player->getInventory()->setItem(0, $slot1);
             $player->getInventory()->setItem(4, $slot2);
             $player->getInventory()->setItem(8, $slot3);
-        } else {
-            Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("NewJoin-Message")));
         }
 
     }
