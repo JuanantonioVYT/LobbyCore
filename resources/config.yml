@@ -1,10 +1,14 @@
 #SimpleCore made by JuanantonioVYT for MegaHost communitty
 
-Join-Message: "[+]{player}"
+Join-Message: "§8[§b+§8]§b{player}"
 
-Quit-Message: "[-]{player}"
+Quit-Message: "§8[§c-§8]§c{player}"
 
-# Hub Nessages Config
+#Permissions Message Confjg
+
+NotPermissions: "§cYou do not have permissions to use"
+
+#Hub Nessages Config
 
 Hub-Message: "Volvistes al lobby {player}"
 Hub-Title: "Joined Lobby"
@@ -25,7 +29,7 @@ GameInfo: "Elije que modalidad deseas jugar"
 
 GameForm1: "SkyWars"
 GameForm2: "FFA"
-GameForm3: "TNTRun"
+GameForm3: "TNTRUN"
 GameForm4: "TNTTag"
 GameForm5: "SkyPvP"
 GameForm6: "Survival Games"
@@ -37,12 +41,11 @@ CosmeticInfo: "Cosmeticos solo para VIP"
 
 CosmeticForm1: "Fly"
 CosmeticForm2: "Size"
-CosmeticForm3: "ColoChat"
 
 #Messages Fly Config
 
-FlyMessageTrue: "Fly activado"
-FlyTitleTrue: "FLY ON"
+FlyMessageTrue: "Fly §bactivado"
+FlyTitleTrue: "FLY §cON"
 
 FlyMessageFalse: "Fly desactivado"
 FlyTitleFalse: "FLY OFF"

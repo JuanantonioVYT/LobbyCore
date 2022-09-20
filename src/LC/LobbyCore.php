@@ -8,18 +8,23 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat as MG;
 
+//Events
+
 use LC\Event\EventListener;
 use LC\Event\Protection;
+
+//Commands
+
 use LC\Commands\HubCommand;
 use LC\Commands\ItemCommand;
+
+//Uis
+
+use LC\UI\UI;
 
 class LobbyCore extends PluginBase implements Listener {
 
     private static $instance;
-	
-	public static function getInstance() : LobbyCore {
-		return self::$instance;
-	}
 	
 	public function onLoad() : void {
 		self::$instance = $this;
@@ -37,5 +42,12 @@ class LobbyCore extends PluginBase implements Listener {
     public function onDisable(): void {
 
     }
-	
+
+    public static function getInstance() : LobbyCore {
+        return self::$instance;
+    }
+
+    public static function getUI() : UI {
+        return new UI();
+    }
 }

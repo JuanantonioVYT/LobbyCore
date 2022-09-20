@@ -32,7 +32,7 @@ class HubCommand extends Command {
 
        $slot1 = ItemFactory::getInstance()->get(345, 0, 1)->setCustomName("Games");
        $slot2 = ItemFactory::getInstance()->get(54, 0, 1)->setCustomName("Cosmeticos");
-		   $slot3 = ItemFactory::getInstance()->get(340, 0, 1)->setCustomName("Informacion");
+	   $slot3 = ItemFactory::getInstance()->get(340, 0, 1)->setCustomName("Informacion");
 
        $player->getInventory()->setItem(0, $slot1);
        $player->getInventory()->setItem(4, $slot2);
