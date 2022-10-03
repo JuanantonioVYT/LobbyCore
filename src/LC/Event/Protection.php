@@ -1,10 +1,12 @@
 <?php
 
 namespace LC\Event;
+
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat as Color;
 use pocketmine\utils\Config;
+use pocketmine\permission\DefaultPermissions;
 
 use LC\LobbyCore;
 
@@ -25,11 +27,10 @@ class Protection implements \pocketmine\event\Listener {
 	public function onBreak(\pocketmine\event\block\BlockBreakEvent $ev) {
 		$pl = $ev->getPlayer();
 		if ($pl->getWorld() === Server::getInstance ()->getWorldManager()->getDefaultWorld()) {
-			if (!$pl->hasPermission("lobbycore.break")) {
+            if (!$pl->hasPermission("lobbycore.build") && !$pl->hasPermission(DefaultPermissions::ROOT_OPERATOR)) {
 				$ev->cancel();
+                $pl->sendPopup("§cYou have don't permissions for break blocks");
 			} else {
-				$ev->cancel();
-				$pl->sendPopup("§cYou have don't permissions for break blocks");
             }
 		}
 	}
@@ -37,11 +38,10 @@ class Protection implements \pocketmine\event\Listener {
 	public function onPlace(\pocketmine\event\block\BlockPlaceEvent $ev) {
 		$pl = $ev->getPlayer();
 		if ($pl->getWorld() === Server::getInstance ()->getWorldManager()->getDefaultWorld()) {
-			if (!$pl->hasPermission("lobbycore.place")) {
+            if (!$pl->hasPermission("lobbycore.build") && !$pl->hasPermission(DefaultPermissions::ROOT_OPERATOR)) {
 				$ev->cancel();
+                $pl->sendPopup("§cYou have don't permissions for place blocks");
 			} else {
-				$ev->cancel();
-				$pl->sendPopup("§cYou have don't permissions for place blocks");
 			}
 		}
 	}

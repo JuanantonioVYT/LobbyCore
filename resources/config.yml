@@ -22,7 +22,7 @@ CommandForm4: "tntag join"
 CommandForm5: "spvp join"
 CommandForm6: "sg join"
 
-#Menu Games Config#
+#Menu Games Config
 
 GameTitle: "MiniGames"
 GameInfo: "Elije que modalidad deseas jugar"
