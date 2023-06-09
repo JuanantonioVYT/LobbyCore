@@ -1,9 +1,8 @@
 # LobbyCore
-LobbyCore Configurable API 4.0.0 For MegaHosting Community
+LobbyCore Configurable API 5.0.0 For MegaHosting Community
 
 # Commands
 /hub - Back to the lobby
-/item - get the items back
 
 # Added
 
@@ -13,7 +12,8 @@ LobbyCore Configurable API 4.0.0 For MegaHosting Community
 - Menus configurable Added
 
 # Permissions
-- lobbycore.use.fly:
-- lobbycore.use.size:
-- lobbycore.break:
+- lobbycore.use.fly
+- lobbycore.use.size
+- lobbycore.break
 - lobbycore.place
+- lobbycore.command.hub
