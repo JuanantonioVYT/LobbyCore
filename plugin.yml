@@ -1,19 +1,15 @@
----
 name: LobbyCore
 main: LC\LobbyCore
-version: 1.0.3
-api: 4.0.0
+version: 1.0.4
+api: 5.0.0
 author: JuanantonioVYT
 
+
+commands:
+  hub:
+    description: Hub command
+    permission: lobbycore.command.hub
+
 permissions:
-  lobbycore.use.fly:
-    default: op
-  lobbycore.use.size:
-    default: op   
-  lobbycore.use.cosmetics:
-    default: op
-  lobbycore.break:
-    default: op
-  lobbycore.place:
-    default: op
----
+  lobbycore.command.hub:
+    default: true

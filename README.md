@@ -13,6 +13,7 @@ LobbyCore Configurable API 4.0.0 For MegaHosting Community
 - Menus configurable Added
 
 # Permissions
-- lobbycore.use.fly
-- lobbycore.use.size
-- lobbycore.build
+- lobbycore.use.fly:
+- lobbycore.use.size:
+- lobbycore.break:
+- lobbycore.place

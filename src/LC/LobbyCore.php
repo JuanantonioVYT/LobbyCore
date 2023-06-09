@@ -10,17 +10,17 @@ use pocketmine\utils\TextFormat as MG;
 
 //Events
 
-use LC\Event\EventListener;
-use LC\Event\Protection;
+use LC\event\EventListener;
+use LC\event\Protection;
 
 //Commands
 
-use LC\Commands\HubCommand;
-use LC\Commands\ItemCommand;
+use LC\commands\HubCommand;
+use LC\commands\ItemCommand;
 
 //Uis
 
-use LC\UI\UI;
+use LC\ui\UI;
 
 class LobbyCore extends PluginBase implements Listener {
 
@@ -35,7 +35,6 @@ class LobbyCore extends PluginBase implements Listener {
         $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new Protection(), $this);
         $this->getServer()->getCommandMap()->register("/hub", new HubCommand());
-        $this->getServer()->getCommandMap()->register("/item", new ItemCommand());
         $this->saveResource("config.yml");
     }
 
