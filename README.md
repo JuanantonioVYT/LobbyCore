@@ -1,5 +1,5 @@
 # LobbyCore
-LobbyCore Configurable for PocketMine-MP 5.0.0
+LobbyCore Configurable API 4.0.0 For MegaHosting Community
 
 # Commands
 /hub - Back to the lobby
