@@ -43,10 +43,10 @@ class HubCommand extends Command
                 $item1->setCustomName("Games");
 
                 $item2 = VanillaItems::DIAMOND_AXE();
-                $item2->setCustomName("Cosmeticos");
+                $item2->setCustomName("Cosmetic");
 
                 $item3 = VanillaItems::BOOK();
-                $item3->setCustomName("Informacion");
+                $item3->setCustomName("Informasi");
 
 
                 $player->getInventory()->setItem(0, $item1);
