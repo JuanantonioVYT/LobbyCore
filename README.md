@@ -1,6 +1,9 @@
 # LobbyCore
 LobbyCore Configurable API 5.0.0 For MegaHosting Community
 
+Fix Images
+Depend: FormImagesFix
+
 # Commands
 /hub - Back to the lobby
 

@@ -45,10 +45,10 @@ class EventListener implements Listener
         $item1->setCustomName("Games");
 
         $item2 = VanillaItems::DIAMOND_AXE();
-        $item2->setCustomName("Cosmeticos");
+        $item2->setCustomName("Cosmetic");
 
         $item3 = VanillaItems::BOOK();
-        $item3->setCustomName("Informacion");
+        $item3->setCustomName("Informasi");
 
 
         $player->getInventory()->setItem(0, $item1);
@@ -72,10 +72,10 @@ class EventListener implements Listener
         if ($itn == "Games") {
             LobbyCore::getInstance()->getUI()->getGames($player);
         }
-        if ($itn == "Cosmeticos") {
+        if ($itn == "Cosmetic") {
             LobbyCore::getInstance()->getUI()->getCosmetics($player);
         }
-        if ($itn == "Informacion") {
+        if ($itn == "Informasi") {
             LobbyCore::getInstance()->getUI()->getInfo($player);
         }
     }
