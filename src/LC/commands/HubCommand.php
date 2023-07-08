@@ -28,7 +28,7 @@ class HubCommand extends Command
 
     public function execute(CommandSender $player, string $label, array $args)
     {
-        if ($player instanceof Player)return;
+        if (!$player instanceof Player)return;
         
         $this->plugin = LobbyCore::getInstance();
         $player->teleport($player->getServer()->getWorldManager()->getDefaultWorld()->getSafeSpawn());
