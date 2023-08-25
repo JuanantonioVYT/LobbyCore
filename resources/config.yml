@@ -1,8 +1,22 @@
-#SimpleCore made by JuanantonioVYT for MegaHost communitty
+# LobbyCore© by JuanantonioVYT
+
+# Configuration
+
+# {player} = get NAME of the player!
+
+# Messages
 
 Join-Message: "§8[§b+§8]§b{player}"
 
 Quit-Message: "§8[§c-§8]§c{player}"
+
+# Personalize your tip for items
+
+Games-Item: "Games"
+
+Cosmetics-Item: "Cosmetics"
+
+Info-Item: "Info"
 
 #Permissions Message Confjg
 

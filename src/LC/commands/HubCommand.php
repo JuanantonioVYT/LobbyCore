@@ -2,6 +2,7 @@
 
 namespace LC\commands;
 
+use pocketmine\block\VanillaBlocks;
 use pocketmine\entity\object\ItemEntity;
 use pocketmine\item\ItemIdentifier;
 use pocketmine\item\ItemTypeIds;
@@ -36,15 +37,15 @@ class HubCommand extends Command
         $player->getArmorInventory()->clearALL();
         $player->sendMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Hub-Message")));
         $player->sendTitle(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Hub-Title")));
-        
-        $item1 = VanillaItems::COMPASS();
-        $item1->setCustomName("Games");
 
-        $item2 = VanillaItems::DIAMOND_AXE();
-        $item2->setCustomName("Cosmeticos");
+        $item1 = VanillaItems::COMPASS();
+        $item1->setCustomName($this->plugin->getConfig()->get("Games-Item"));
+
+        $item2 = VanillaBlocks::CHEST()->asItem();
+        $item2->setCustomName($this->plugin->getConfig()->get("Cosmetics-Item"));
 
         $item3 = VanillaItems::BOOK();
-        $item3->setCustomName("Informacion");
+        $item3->setCustomName($this->plugin->getConfig()->get("Info-Item"));
 
 
         $player->getInventory()->setItem(0, $item1);

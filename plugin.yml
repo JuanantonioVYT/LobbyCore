@@ -1,13 +1,8 @@
 name: LobbyCore
 main: LC\LobbyCore
-version: 1.2.0
+version: 1.1.5
 api: 5.0.0
 author: JuanantonioVYT
-
-commands:
-  hub:
-    description: Hub command
-    permission: lobbycore.command.hub
 
 permissions:
   lobbycore.command.hub:

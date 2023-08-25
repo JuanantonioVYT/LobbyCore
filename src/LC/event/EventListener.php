@@ -4,6 +4,9 @@ namespace LC\event;
 
 use LC\api\ItemManager;
 use LC\block\RegisterBlocks;
+use LC\ui\CosmeticsUI;
+use LC\ui\GamesUI;
+use LC\ui\InfoUI;
 use pocketmine\block\Block;
 use pocketmine\block\BlockTypeIds;
 use pocketmine\block\VanillaBlocks;
@@ -35,20 +38,20 @@ class EventListener implements Listener
 
         $player = $event->getPlayer();
         $name = $player->getName();
+        $this->plugin = LobbyCore::getInstance();
 
         $event->setJoinMessage("");
-        $this->plugin = LobbyCore::getInstance();
-        Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Join-Message")));
+        Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$name], $this->plugin->getConfig()->get("Join-Message")));
         $player->teleport(Server::getInstance()->getWorldManager()->getDefaultWorld()->getSafeSpawn());
 
         $item1 = VanillaItems::COMPASS();
-        $item1->setCustomName("Games");
+        $item1->setCustomName($this->plugin->getConfig()->get("Games-Item"));
 
-        $item2 = VanillaItems::DIAMOND_AXE();
-        $item2->setCustomName("Cosmeticos");
+        $item2 = VanillaBlocks::CHEST()->asItem();
+        $item2->setCustomName($this->plugin->getConfig()->get("Cosmetics-Item"));
 
         $item3 = VanillaItems::BOOK();
-        $item3->setCustomName("Informacion");
+        $item3->setCustomName($this->plugin->getConfig()->get("Info-Item"));
 
 
         $player->getInventory()->setItem(0, $item1);
@@ -62,7 +65,7 @@ class EventListener implements Listener
         $name = $player->getName();
 
         $event->setQuitMessage("");
-        Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Quit-Message")));
+        Server::getInstance()->broadcastMessage(str_replace(["{player}"], [$name], $this->plugin->getConfig()->get("Quit-Message")));
     }
 	
     public function onClick(PlayerInteractEvent $event)
@@ -70,13 +73,13 @@ class EventListener implements Listener
         $player = $event->getPlayer();
         $itn = $player->getInventory()->getItemInHand()->getCustomName();
         if ($itn == "Games") {
-            LobbyCore::getInstance()->getUI()->getGames($player);
+            GamesUI::getInstance()->getGamesUI($player);
         }
         if ($itn == "Cosmeticos") {
-            LobbyCore::getInstance()->getUI()->getCosmetics($player);
+            CosmeticsUI::getInstance()->getCosmeticsUI($player);
         }
         if ($itn == "Informacion") {
-            LobbyCore::getInstance()->getUI()->getInfo($player);
+            InfoUI::getInstance()->getInfoUI($player);
         }
     }
 }
