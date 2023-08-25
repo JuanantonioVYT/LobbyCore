@@ -5,6 +5,7 @@ LobbyCore Configurable API 5.0.0
 
 - Fixed "NotPermission" config
 - Added CHEST for ITEM cosmetics
+- Added config to edit item name
 - Some codes were changed to order them
 - Removed protection, soon added new protection with config
 
