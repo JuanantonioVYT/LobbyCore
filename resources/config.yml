@@ -1,0 +1,100 @@
+# LobbyCore© by JuanantonioVYT
+
+# Configuration
+
+# {player} = get NAME of the player!
+
+# Messages
+
+Join-Message: "§8[§b+§8]§b{player}"
+
+Quit-Message: "§8[§c-§8]§c{player}"
+
+# Personalize your tip for items
+
+Games-Item: "Games"
+
+Cosmetics-Item: "Cosmetics"
+
+Info-Item: "Info"
+
+#Permissions Message Confjg
+
+NotPermissions: "§cYou do not have permissions to use"
+
+#Hub Nessages Config
+
+Hub-Message: "Volvistes al lobby {player}"
+Hub-Title: "Joined Lobby"
+
+#Menu Games Command Config
+
+CommandForm1: "sw join"
+CommandForm2: "ffa join"
+CommandForm3: "tntrun join"
+CommandForm4: "tntag join"
+CommandForm5: "spvp join"
+CommandForm6: "sg join"
+
+#Menu Games Config
+
+GameTitle: "MiniGames"
+GameInfo: "Elije que modalidad deseas jugar"
+
+GameForm1: "SkyWars"
+GameForm2: "FFA"
+GameForm3: "TNTRUN"
+GameForm4: "TNTTag"
+GameForm5: "SkyPvP"
+GameForm6: "Survival Games"
+
+#Menu Cosmetics Config
+
+CosmeticTitle: "Cosmetics"
+CosmeticInfo: "Cosmeticos solo para VIP"
+
+CosmeticForm1: "Fly"
+CosmeticForm2: "Size"
+
+#Messages Fly Config
+
+FlyMessageTrue: "Fly §bactivado"
+FlyTitleTrue: "FLY §cON"
+
+FlyMessageFalse: "Fly desactivado"
+FlyTitleFalse: "FLY OFF"
+
+#Menu Fly Config
+
+FlyTitle: "¿Fly ON & Fly OFF?"
+FlyInfo: "Fly for VIP"
+
+FlyForm1: "FLY ON"
+FlyForm2: "FLY OFF"
+
+#Message Size Config
+
+SizeMessageNormal: "Size normal"
+SizeTitleNormal: "Su tamaño es normal"
+
+SizeMessageMedium: "Size medium"
+SizeTitleMedium: "Su tamaño es mediano"
+
+SizeMessageBig: "Size big"
+SizeTitleBig: "Su tamaño es grande"
+
+#Menu Size Config
+
+SizeTitle: "SizeMode"
+SizeInfo: "Aumenta el tamaño de tu skin"
+
+SizeForm1: "Size Normal"
+SizeForm2: "Size Mediano"
+SizeForm3: "Size Grande"
+
+#Menu Info Config
+
+InfoTitle: "Informacion"
+Info: "Information"
+
+#Soon More Updates
