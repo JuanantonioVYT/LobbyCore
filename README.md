@@ -1,6 +1,9 @@
 # LobbyCore v1.1.5
 LobbyCore Configurable API 5.0.0
 
+[![](https://poggit.pmmp.io/shield.api/LobbyCore)](https://poggit.pmmp.io/p/LobbyCore)
+<a href="https://poggit.pmmp.io/p/LobbyCore"><img src="https://poggit.pmmp.io/shield.api/LobbyCore"></a>
+
 # Updates
 
 - Fixed "NotPermission" config
