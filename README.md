@@ -1,19 +1,16 @@
-# LobbyCore
-LobbyCore Configurable API 5.0.0 For MegaHosting Community
+# LobbyCore v1.1.5
+LobbyCore Configurable API 5.0.0
+
+# Updates
+
+- Fixed "NotPermission" config
+- Added CHEST for ITEM cosmetics
+- Some codes were changed to order them
+- Removed protection, soon added new protection with config
 
 # Commands
 /hub - Back to the lobby
 
-# Added
-
-- Protection Added
-- Items Added
-- Join And Quit Added
-- Menus configurable Added
-
 # Permissions
 - lobbycore.use.fly
 - lobbycore.use.size
-- lobbycore.break
-- lobbycore.place
-- lobbycore.command.hub
